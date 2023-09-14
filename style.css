@@ -18,7 +18,7 @@
 body{
     background-color: var(--Off-white);
     font-family: 'Inter', sans-serif;  
-    padding: 40px 70px;
+    padding: 30px 70px;
 }
 
 nav {
@@ -57,79 +57,98 @@ nav {
 }
 
 .first-section {
-    border: skyblue solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.new-principal {
+    width: 1500px;
+    margin-right: 20px;
+}
+
+.new-principal .img-container img {
+    width: 100%;
+}
+
+.new-principal .text-container {
     display: flex;
     justify-content: space-between;
 }
 
-.new-principal {
-    border: red solid 2px;
-    margin-right: 20px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    width: 100%;
-    height: auto;
-}
-
-.first-section .img-container {
-    border: yellow solid 2px;
-}
-
-.first-section .img-container img {
-    width: 100%;
-}
-
-.first-section .text-container .title-container h1{
+.new-principal .text-container .title-container{
     color: var(--Very-dark-blue);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
-    margin-top: 80px;
+    margin-top: 10px;
+    margin-right: 40px;
 }
 
-.first-section .text-container .p-container {
-    padding-top: 20px;
-    padding-right: 30px;
+.new-principal .text-container .p-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
 }
 
-.first-section .text-container .p-container p {
-    padding-left: 80px;
+.new-principal .text-container .p-container p {
     line-height : 25px;
     text-align: justify;
-    word-spacing: -2px;
+    /* word-spacing: -2px; */
     font-weight: 400;
     color: var(--Dark-grayish-blue);
-    font-size: 19px;
 }
 
 .first-section .text-container .p-container button {
-    margin-left: 80px;
-    margin-top: 50px;
-    width: 220px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     background-color: var(--Soft-red);
     color: var(--Off-white);
     letter-spacing: 3px;
     border: none;
     cursor: pointer;
+    
 }
 
 .first-section .text-container .p-container button:hover {
     background-color: var(--Very-dark-blue);
 }
 
-
-.first-section .text-container {
-    border: pink solid 2px;
-    display: flex;
-    justify-content: space-between;
+.news-container {
+    padding: 12px;
+    background-color: var(--Very-dark-blue);
 }
 
-.news-container {
-    border: orange solid 2px;
+.news-container h1 {
+    color: var(--Soft-orange);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.news-container h2 {
+    color: var(--Off-white);
+    margin: 10px;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.news-container p {
+    color: var(--Grayish-blue);
+    margin: 10px;
+    padding: 0 0 20px 0;
+}
+
+.news-container hr {
+    color: var(--Grayish-blue);
+}
+
+.news-container h2:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
 }
 
 
